@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("FUNDAMENTOS HOMEWORK");
+﻿class Program{
+
+    static void Main(string[] args){
+Usuario nuevoUsuario = new Usuario("Juan Carlos", "Juancarlos@jajamail.clon", "password");
+nuevoUsuario.MostrarDatos();
+
+    }
+}
