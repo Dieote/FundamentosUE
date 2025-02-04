@@ -1,0 +1,14 @@
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\bin\Debug\net9.0\Blackjack.exe
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\bin\Debug\net9.0\Blackjack.deps.json
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\bin\Debug\net9.0\Blackjack.runtimeconfig.json
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\bin\Debug\net9.0\Blackjack.dll
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\bin\Debug\net9.0\Blackjack.pdb
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\Blackjack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\Blackjack.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\Blackjack.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\Blackjack.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\Blackjack.dll
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\refint\Blackjack.dll
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\Blackjack.pdb
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\Blackjack.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\UE\Fundamentos Programacion\BlackJack\Blackjack\obj\Debug\net9.0\ref\Blackjack.dll
