@@ -5,7 +5,7 @@
     {
 
         LogIn registro = new LogIn();
-        Usuario usuarioCreado = null;
+        Usuario? usuarioCreado = null;
 
         while (true)
         {

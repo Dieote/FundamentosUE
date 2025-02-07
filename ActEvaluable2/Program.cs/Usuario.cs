@@ -1,6 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-using Microsoft.VisualBasic;
-
 public class Usuario{
 
     public string Correo {get; set;}
