@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JuegoRol")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fa8603806cee61a0caa3ba6a62de8a7438ec80b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b569ec575ff8f67bb63d61af864d54994bb0077f")]
 [assembly: System.Reflection.AssemblyProductAttribute("JuegoRol")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JuegoRol")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
