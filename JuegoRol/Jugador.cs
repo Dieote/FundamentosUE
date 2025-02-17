@@ -1,6 +1,3 @@
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-
 public class Jugador{
     private string? nombre;
     private string? poderEspecial;
@@ -36,13 +33,13 @@ public Jugador(string nombre, int nivelAtaque, int nivelDefensa, List<Habilidad>
        this.listaHablididades = lista;
     }
 
-public void ListarHabilidades(){
+/* public void ListarHabilidades(){
     foreach (var item in listaHablididades){
         Console.WriteLine("Nombre: " + item.GetNombre());
         Console.WriteLine("Potenciador: " + item.GetPotenciador());
-        Console.WriteLine("Nombre: " + item.GetVida());
+        Console.WriteLine("Vida: " + item.GetVida());
     }
-}
+} */
 
 
 }

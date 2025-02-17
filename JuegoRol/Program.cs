@@ -17,9 +17,9 @@
         Jugador jugadorDos = new Jugador("Havarti",7,8,lista2);
         Jugador jugadorTres = new Jugador("Iberico",10,8,lista);
 
-        jugadorUno.ListarHabilidades();
+      /*   jugadorUno.ListarHabilidades();
         jugadorDos.ListarHabilidades();
-        jugadorTres.ListarHabilidades();
+        jugadorTres.ListarHabilidades(); */
     }
 
 }
