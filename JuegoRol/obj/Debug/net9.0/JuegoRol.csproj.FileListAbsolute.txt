@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\bin\Debug\net9.0\JuegoRol.exe
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\bin\Debug\net9.0\JuegoRol.deps.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\bin\Debug\net9.0\JuegoRol.runtimeconfig.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\bin\Debug\net9.0\JuegoRol.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\bin\Debug\net9.0\JuegoRol.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\JuegoRol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\JuegoRol.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\JuegoRol.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\JuegoRol.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\JuegoRol.sourcelink.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\JuegoRol.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\refint\JuegoRol.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\JuegoRol.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\JuegoRol.genruntimeconfig.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\JuegoRol\obj\Debug\net9.0\ref\JuegoRol.dll

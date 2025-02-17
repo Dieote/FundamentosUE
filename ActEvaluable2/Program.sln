@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program.cs", "Program.cs\Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoRol", "..\JuegoRol\JuegoRol\JuegoRol.csproj", "{346ECBC2-5B1D-42F2-A5BB-137E38375FEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoRol", "..\JuegoRol\JuegoRol.csproj", "{ED3CC581-6210-4A1A-BD97-B71E8B471F7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{346ECBC2-5B1D-42F2-A5BB-137E38375FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{346ECBC2-5B1D-42F2-A5BB-137E38375FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{346ECBC2-5B1D-42F2-A5BB-137E38375FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3CC581-6210-4A1A-BD97-B71E8B471F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3CC581-6210-4A1A-BD97-B71E8B471F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3CC581-6210-4A1A-BD97-B71E8B471F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3CC581-6210-4A1A-BD97-B71E8B471F7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c94284cb-cf50-41c5-91a7-0516a08333ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Program.cs/obj/Debug/net9.0/Program.cs.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs/obj/Debug/net9.0/Program.cs.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs/obj/Debug/net9.0/Program.cs.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs/obj/Debug/net9.0/Program.cs.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs/obj/Debug/net9.0/Program.cs.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs/obj/Debug/net9.0/Program.cs.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs/obj/Debug/net9.0/Program.cs.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs/obj/Debug/net9.0/Program.cs.assets.cache" afterDir="false" />
-    </list>
+    <list default="true" id="c94284cb-cf50-41c5-91a7-0516a08333ff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,21 +10,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Dieote"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Dieote&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Dieote/FundamentosUE.git",
-    "accountId": "edb0f060-65ca-442f-a06c-845e8e355f59"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Dieote/FundamentosUE.git&quot;,
+    &quot;accountId&quot;: &quot;edb0f060-65ca-442f-a06c-845e8e355f59&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2siJExygxn5Hi7AMXSio2DNHIzy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,7 +35,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Usuario/Documents/GitHub/FundamentosUE/ActEvaluable2"
+    "last_opened_file_path": "C:/Users/Usuario/Documents/GitHub/FundamentosUE"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
