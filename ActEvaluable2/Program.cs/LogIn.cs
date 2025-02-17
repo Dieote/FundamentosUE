@@ -9,7 +9,7 @@ public class LogIn{
     public bool RegistrarUsuario(string correo, string contraseña){
         if (usuariosRegistrados.Any( u => u.Correo == correo)) // Uso de Any en lugar de Exists
         {
-            Console.WriteLine("El correo ya existe.");
+            Console.WriteLine("El correo *" + correo + "* ya existe.");
             return false;
         }
         usuariosRegistrados.Add(new Usuario(correo, contraseña));
@@ -26,7 +26,7 @@ public Usuario? IniciarSesion(string correo, string contraseña){
         }
     }
         if (usuarioEncontrado == null){
-            Console.WriteLine("Correo incorrecto.");
+            Console.WriteLine("Correo no registrado.");
             return null;
         }
 

@@ -6,18 +6,9 @@ private List<Entrenamiento> entrenamientos;
 
 //Constructor
 public Usuario(string correo, string contraseña){
-    this.Correo = correo;
-    this.Contraseña = contraseña;
+    Correo = correo;
+    Contraseña = contraseña;
     entrenamientos = new List<Entrenamiento>();
-}
-
-private bool CorreoValido(string correo){
-    if (string.IsNullOrWhiteSpace(correo)) {
-        return false;
-    } else{
-        var email = new System.Net.Mail.MailAddress(correo);
-        return email.Address == correo;
-    }
 }
 
 public void MostrarDatos(){
