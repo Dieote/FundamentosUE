@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ActividadEvaluable2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ActividadEvaluable2.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ActividadEvaluable2.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ActividadEvaluable2.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ActividadEvaluable2.sourcelink.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\bin\Debug\net9.0\ActividadEvaluable2.exe
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\bin\Debug\net9.0\ActividadEvaluable2.deps.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\bin\Debug\net9.0\ActividadEvaluable2.runtimeconfig.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\bin\Debug\net9.0\ActividadEvaluable2.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\bin\Debug\net9.0\ActividadEvaluable2.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ActividadEvaluable2.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\refint\ActividadEvaluable2.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ActividadEvaluable2.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ActividadEvaluable2.genruntimeconfig.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\ActividadEvaluable2\obj\Debug\net9.0\ref\ActividadEvaluable2.dll
