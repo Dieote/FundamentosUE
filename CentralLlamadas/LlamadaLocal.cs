@@ -1,4 +1,4 @@
-abstract class LlamadaLocal : Llamada {
+class LlamadaLocal : Llamada {
 
     public override double Coste = 0;
 
