@@ -4,7 +4,7 @@
 
         Console.WriteLine("****** Juego de Rol ******");
 
-        List<Habilidad> lista =new List<Habilidad>();
+    /*     List<Habilidad> lista =new List<Habilidad>();
         List<Habilidad> lista2 =new List<Habilidad>();
 
         lista.Add(new Habilidad("Superfuerza",3,12));
@@ -19,7 +19,16 @@
 
         jugadorUno.ListarHabilidades();
         jugadorDos.ListarHabilidades();
-        jugadorTres.ListarHabilidades();
+        jugadorTres.ListarHabilidades(); 
+
+        Enemigo enemigo = new Enemigo("Enemigo1", 100, 150);
+       enemigo.poder = 123;
+        enemigo.mostrarDatos();
+*/ 
+        EnemigoAgua enemigoAgua = new EnemigoAgua("Enemigo1", 100, "Tornado");
+        enemigoAgua.mostrarDatos();
+
+
     }
 
 }
