@@ -1,17 +1,29 @@
-class Main{
+/*
+Desarrollar una aplicación de control de llamadas realizadas en una centralita telefónica.
 
-    static void Main(string[] args){
+La centralita mostrará por pantalla todas las llamadas según las vaya registrando.
+Existen tres tipos de llamadas:
 
-        Central central = new Central();
+- Las llamadas locales que no tienen coste
+- Las llamadas provinciales que cuestan 15 céntimos el segundo.
+- Las llamadas nacionales que dependiendo de la franja horaria en la que se realicen cuestan: 20 céntimos en franja 1, 25 céntimos en franja 2 y 30 céntimos en franja 3, cada segundo.
 
-        //Realizamos llamadas
+Todas las llamadas tienen como datos el número origen de la llamada, el número destino y su duración en segundos.
 
-        central.RegistrarLlamadas(new LlamadaLocal("654876343", "632231897", 10));
-        central.RegistrarLlamadas(new LlamadaNacional("664766333", "34765987231", 8, LlamadaNacional.FranjaHoraria.Tarde));
-        central.RegistrarLlamadas(new LlamadaProvincial("687234099", "632231897", 15));
-    
-        central.MostararLlamadas();
+Con la centralita se podrá
 
-        central.MostarCosteTotal();
-    }
-}
+- Registrar llamadas, mostrar llamadas realizadas (número origen, número destino, duración y coste)
+- Mostrar Costes totales
+- Mostrar llamadas realizadas
+
+Para la realización de la práctica se desarrollarán las siguientes clases:
+
+- Llamada (Abstracta): nOrigen, nDestino, coste
+- LlamadaProvincial
+- LlamadaLocal
+- LlamadaNacional: franja
+- Centralita: arraylist
+- Entrada: main
+
+Decide cuales son los métodos que se deberían de poner en herencia
+*/

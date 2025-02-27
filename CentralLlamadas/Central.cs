@@ -1,6 +1,6 @@
 class Central{
 
-    private List<Llamadas> llamados = new List<Llamadas>();
+    private List<Llamada> llamados = new List<Llamada>();
 
     public void RegistrarLlamadas(Llamada llamado){
         llamados.add(llamado);

@@ -13,7 +13,7 @@ abstract class Llamada {
     }
 
     public void MostrarDatos(){
-        Console.WriteLine($"Origen: {NumOrigen}, Destino: {NumDestino}, Duracion: {Duracion}")
+        Console.WriteLine($"Origen: {NumOrigen}, Destino: {NumDestino}, Duracion: {Duracion}");
     }
     
 }
