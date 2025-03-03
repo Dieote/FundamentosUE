@@ -1,4 +1,4 @@
-abstract class LlamadaNacional : Llamada {
+class LlamadaNacional : Llamada {
 
     public enum FranjaHoraria{Mañana, Tarde, Noche} //lista de valores enum, usa el indice 
     
@@ -12,7 +12,7 @@ abstract class LlamadaNacional : Llamada {
     }
 
     public LlamadaNacional (string origen, string destino, int duracion, FranjaHoraria franja) : base(origen, destino, duracion){
-        this.Franja = franja;
+        Franja = franja;
      }
 
     public override void MostrarDatos(){

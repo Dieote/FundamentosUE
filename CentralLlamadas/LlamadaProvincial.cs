@@ -1,4 +1,4 @@
-abstract class LlamadaProvincial : Llamada {
+class LlamadaProvincial : Llamada {
 
     private const double TarifaProvincial = 0.20;
     public override double Coste{
