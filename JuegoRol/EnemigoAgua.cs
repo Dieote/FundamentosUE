@@ -16,14 +16,19 @@ this.poderAgua = poderAgua;
 }
 
 
-public void mostrarDatos(){
-        Console.WriteLine("El poder de agua es " + poderAgua);
-        Console.WriteLine("El nivel de agua es " + nivelAgua);
-        base.mostrarDatos();
+public override void mostrarDatos(){
+    base.mostrarDatos();
+    Console.WriteLine("El poder de agua es " + poderAgua);
+    Console.WriteLine("El nivel de agua es " + nivelAgua);
 }
 
     public override void realizarAtaque()
     {
-        Console.WriteLine("El enemigo ataca " + poderAgua);
+        Console.WriteLine("El enemigo ataca con agua" + poderAgua);
+    }
+
+    public void realizarSanacionAgua(){
+    Console.WriteLine("El enemigo se cura con agua");
+    vida += 10;
     }
 }

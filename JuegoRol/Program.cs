@@ -25,9 +25,24 @@
        enemigo.poder = 123;
         enemigo.mostrarDatos();
 */ 
-        EnemigoAgua enemigoAgua = new EnemigoAgua("Enemigo1", 100, "Tornado");
-        enemigoAgua.mostrarDatos();
+        EnemigoAgua enemigoAgua = new EnemigoAgua("EnemigoAGUA", 100, "Tornado");
+        EnemigoFuego enemigoFuego = new EnemigoFuego("EnemigoFUEGO", 100,40,60, "Llamarada");
+        //enemigoAgua.mostrarDatos();
+        //enemigoFuego.mostrarDatos();
 
+        List<Enemigo> listaEnemigos = new List<Enemigo>();
+        listaEnemigos.Add(enemigoAgua);
+        listaEnemigos.Add(enemigoFuego);
+        
+        foreach (var item in listaEnemigos){
+            //si es enemigofuego
+            if(item.GetType() == typeof(EnemigoFuego)){
+                ((EnemigoFuego)item).realizarSanacionFuego();
+            }else if(item.GetType() == typeof(EnemigoAgua)){
+                ((EnemigoAgua)item).realizarSanacionAgua();
+            }
+                item.mostrarDatos();
+            }
 
     }
 

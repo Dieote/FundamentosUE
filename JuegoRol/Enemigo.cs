@@ -20,7 +20,7 @@ abstract class Enemigo {
         this.poder = 150;
     }
 
-    public void mostrarDatos(){
+    public virtual void mostrarDatos(){
         Console.WriteLine("El nombre de enemigo es " + nombre);
         Console.WriteLine("El poder de enemigo es " + poder);
         Console.WriteLine("La vida de enemigo es " + vida);
