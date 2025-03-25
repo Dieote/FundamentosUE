@@ -24,7 +24,7 @@
         Enemigo enemigo = new Enemigo("Enemigo1", 100, 150);
        enemigo.poder = 123;
         enemigo.mostrarDatos();
-*/ 
+
         EnemigoAgua enemigoAgua = new EnemigoAgua("EnemigoAGUA", 100, "Tornado");
         EnemigoFuego enemigoFuego = new EnemigoFuego("EnemigoFUEGO", 100,40,60, "Llamarada");
         //enemigoAgua.mostrarDatos();
@@ -43,6 +43,7 @@
             }
                 item.mostrarDatos();
             }
+*/ 
 
     }
 
