@@ -2,10 +2,10 @@ class EnemigoFuego : Enemigo{
 //no hereda privates ni constructores
 
     public int nivelFuego { get; set; }
-
     public string poderFuego { get; set; }
                                                                                          //con esto se llama al constructor padre                   
-public EnemigoFuego(string nombre, int vida, int nivel, int nivelFuego, string poderFuego) : base(nombre, vida, nivel){ 
+public EnemigoFuego(string nombre, int vida, int nivel, Perfil perfil, int nivelFuego, string poderFuego) 
+: base(nombre, vida, nivel, perfil){ 
 this.nivelFuego = nivelFuego;
 this.poderFuego = poderFuego;
 }
@@ -22,8 +22,8 @@ this.nivelFuego = nivelFuego;
 this.poderFuego = poderFuego;
 }
 
-public override void mostrarDatos(){
-        base.mostrarDatos();
+public override void MostrarDatos(){
+        base.MostrarDatos();
         Console.WriteLine("El poder de fuego es " + poderFuego);
         Console.WriteLine("El nivel de fuego es " + nivelFuego);
 }

@@ -3,7 +3,6 @@ public class Habilidad{
     private string? nombre;
     private int potenciador;
     private int vida;
-
     public Habilidad(){}
     public Habilidad(string nombre, int potenciador, int vida){
         this.nombre = nombre;
@@ -11,15 +10,15 @@ public class Habilidad{
         this.vida = vida;
     }
  public string? GetNombre(){
-        return this.nombre;
+        return nombre;
     }
 
     public int GetVida(){
-        return this.vida;
+        return vida;
     }
 
     public int GetPotenciador(){
-        return this.potenciador;
+        return potenciador;
     }
 
     public void SetVida(int vida){
