@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7badc368-2c34-49a1-8494-e80cfcfcafc8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/JuegoRol/bin/Debug/net9.0/JuegoRol.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/bin/Debug/net9.0/JuegoRol.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/bin/Debug/net9.0/JuegoRol.exe" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/bin/Debug/net9.0/JuegoRol.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/bin/Debug/net9.0/JuegoRol.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/bin/Debug/net9.0/JuegoRol.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/JuegoRol.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/ref/JuegoRol.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/ref/JuegoRol.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/refint/JuegoRol.dll" beforeDir="false" afterPath="$PROJECT_DIR$/JuegoRol/obj/Debug/net9.0/refint/JuegoRol.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,22 +23,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Dieote"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Dieote&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Dieote/FundamentosUE.git",
-    "accountId": "edb0f060-65ca-442f-a06c-845e8e355f59"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Dieote/FundamentosUE.git&quot;,
+    &quot;accountId&quot;: &quot;edb0f060-65ca-442f-a06c-845e8e355f59&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2tAosSXb3xyXVt8oi2ucExf5u6G" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,7 +48,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Usuario/Documents/GitHub/FundamentosUE"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
