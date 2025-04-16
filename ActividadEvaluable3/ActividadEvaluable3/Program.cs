@@ -5,18 +5,23 @@ class Program
     static void Main(string[] args)  
     {
         List<Tarea> tareas = new List<Tarea>();
-
+/*
         Tarea tarea = new Tarea("Tarea 1", "Descripción de la tarea 1", TipoTarea.Persona, true);
-        tarea.MostrarTarea(); 
         Tarea tarea2 = new Tarea("Tarea 2", "Descripción de la tarea 2", TipoTarea.Trabajo, false);
-        tarea2.MostrarTarea(); 
-        Tarea tarea3 = new Tarea("Tarea 3", "Descripción de la tarea 3", TipoTarea.Ocio, true); 
-        tarea3.MostrarTarea();
+         Tarea tarea3 = new Tarea("Tarea 3", "Descripción de la tarea 3", TipoTarea.Ocio, true); 
+
+        Console.WriteLine(tarea3);
+        Console.WriteLine(tarea);
+        Console.WriteLine(tarea2);
+
 
         tareas.Add(tarea);
         tareas.Add(tarea3);
         Tarea.MostrarListadoTareas(tareas);
-    }
+        Tarea.EliminarTarea(tareas, 1);
+        Tarea.MostrarListadoTareas(tareas); 
+*/
+
    
         /* while (true)
         {
@@ -36,26 +41,7 @@ class Program
                     Console.Write("Ingrese el Nombre de la tarea: ");
                     string nombre = Console.ReadLine()!;
                     
-                    Console.Write("Seleccione el tipo de Tarea: ");
-                    Console.WriteLine("1. Personal");
-                    Console.WriteLine("2.Trabajo");
-                    Console.WriteLine("3. Ocio");
-                    switch (Console.ReadLine()!)
-                    {
-                        case "1":
-                            TipoTarea tipoTarea = TipoTarea.Persona;
-                            break;
-                        case "2":
-                            TipoTarea tipoTarea = TipoTarea.Trabajo;
-                            break;
-                        case "3":
-                            TipoTarea tipoTarea = TipoTarea.Ocio;
-                            break;
-                        default:
-                            Console.WriteLine("Opción no válida.");
-                            return;
-                    }
-
+                
                     Console.Write("Ingrese la descripción de la tarea: ");
                     string descripcion = Console.ReadLine()!;
                     Console.Write("¿Es una tarea prioritaria? (S/N): ");
@@ -82,8 +68,8 @@ class Program
                         Console.WriteLine("Opción no válida.");
                         break;
             }
-        }
+        }*/
     }
- */
+ 
    
 }
