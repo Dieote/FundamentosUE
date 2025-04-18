@@ -75,6 +75,15 @@ class Program{
                     }   
                     break;
                 case "5":
+                    if (tareas.Count == 0){
+                        Console.WriteLine("No hay tareas registradas para exportar.");
+                    }
+                    else{
+                        Tarea.ExportarTareas(tareas);
+                    }
+                    break;
+                case "6":
+                        Tarea.ImportarTareas(tareas);
                     break;
                 case "7":
                     Console.WriteLine("Saliendo del programa...");
@@ -103,7 +112,7 @@ class Program{
 
  public static Tipo SeleccionarTipoTarea(){
          Console.Write("Seleccione el tipo de Tarea: ");
-                    Console.WriteLine("/n1. Persona");
+                    Console.WriteLine("\n1. Persona");
                     Console.WriteLine("2.Trabajo");
                     Console.WriteLine("3. Ocio");
                     switch (Console.ReadLine()!)

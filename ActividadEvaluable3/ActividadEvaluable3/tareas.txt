@@ -1,0 +1,5 @@
+2;ESTUDIAR;Tarae para realiazar actividad de estudio;Trabajo;False
+3;VIDEOJUEGOS;Tarea para realizar actividad de recreacion;Ocio;True
+4;REPARAR COCHE;Llevar a taller mecanico el coche;Persona;True
+6;DENTISTA;Tarea para realizar actividad de DIENTES;Persona;True
+5;TECLADO;Tarea para realizar actividad de MUSICA;Ocio;False
