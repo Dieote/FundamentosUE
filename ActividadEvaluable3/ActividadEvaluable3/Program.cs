@@ -4,16 +4,25 @@ class Program{
     static void Main(){
 
         List<Tarea> tareas = new List<Tarea>();
-        Tipo tipoTarea;
+        Tipo tipoDeTarea;
+
+        Tarea newTarea0 = new Tarea("FISIO", "Tarea para realizar actividad de recuperacion", Tipo.Persona , true);
+        Tarea newTarea1 = new Tarea("ESTUDIAR", "Tarae para realiazar actividad de estudio", Tipo.Trabajo, false);
+        Tarea newTarea2 = new Tarea("VIDEOJUEGOS", "Tarea para realizar actividad de recreacion", Tipo.Ocio, true); 
+
+        tareas.Add(newTarea1);
+        tareas.Add(newTarea0);
+        tareas.Add(newTarea2);
 
         while (true){
             Console.WriteLine("\n--- Menú Principal ---");
             Console.WriteLine("1. Registrar tareas.");
-            Console.WriteLine("2. Buscar tareas por tipo.");
-            Console.WriteLine("3. Eliminar tareas.");
-            Console.WriteLine("4. Exportar tareas.");
-            Console.WriteLine("5. Importar tareas.");
-            Console.WriteLine("6. Salir");
+            Console.WriteLine("2. Listar tareas.");
+            Console.WriteLine("3. Buscar tareas por tipo.");
+            Console.WriteLine("4. Eliminar tareas.");
+            Console.WriteLine("5. Exportar tareas.");
+            Console.WriteLine("6. Importar tareas.");
+            Console.WriteLine("7. Salir");
             Console.Write("Seleccione una opción: ");
             string opcion = Console.ReadLine()!;
 
@@ -23,7 +32,7 @@ class Program{
                     string nombre = Console.ReadLine()!;
                     Console.Write("Ingrese la descripción de la tarea: ");
                     string descripcion = Console.ReadLine()!;
-                    tipoTarea = SeleccionarTipoTarea();
+                    tipoDeTarea = SeleccionarTipoTarea();
 
                     Console.Write("¿Es una tarea prioritaria? (S/N): ");
                     string respuesta = Console.ReadLine()!;
@@ -38,7 +47,7 @@ class Program{
                         Console.WriteLine("Opción no válida.");
                         return; //o probar continue
                     }
-                    Tarea tarea = new Tarea(nombre, descripcion, tipoTarea, prioridad);
+                    Tarea tarea = new Tarea(nombre, descripcion, tipoDeTarea, prioridad);
                     tareas.Add(tarea);
                     Console.WriteLine("Tarea registrada correctamente.");
                     break;
@@ -52,12 +61,22 @@ class Program{
                     }
                         break;
                 case "3":
+                    BuscarPorTipoTarea(tareas);
                     break;
                 case "4":
+                    if (tareas.Count == 0){
+                        Console.WriteLine("No hay tareas registradas para eliminar.");
+                    }
+                    else{
+                        Tarea.MostrarListadoTareas(tareas);
+                        Console.Write("Ingrese el ID de la tarea a eliminar: ");
+                        int idTarea = int.Parse(Console.ReadLine()!);
+                        EliminarTarea(tareas, idTarea);
+                    }   
                     break;
                 case "5":
                     break;
-                case "6":
+                case "7":
                     Console.WriteLine("Saliendo del programa...");
                     return;
                 default:
@@ -67,10 +86,7 @@ class Program{
 
 
 /*
-        Tarea tarea = new Tarea("Tarea 1", "Descripción de la tarea 1", TipoTarea.Persona, true);
-        Tarea tarea2 = new Tarea("Tarea 2", "Descripción de la tarea 2", TipoTarea.Trabajo, false);
-         Tarea tarea3 = new Tarea("Tarea 3", "Descripción de la tarea 3", TipoTarea.Ocio, true); 
-
+        
         Console.WriteLine(tarea3);
         Console.WriteLine(tarea);
         Console.WriteLine(tarea2);
@@ -87,7 +103,7 @@ class Program{
 
  public static Tipo SeleccionarTipoTarea(){
          Console.Write("Seleccione el tipo de Tarea: ");
-                    Console.WriteLine("1. Personal");
+                    Console.WriteLine("/n1. Persona");
                     Console.WriteLine("2.Trabajo");
                     Console.WriteLine("3. Ocio");
                     switch (Console.ReadLine()!)
@@ -116,22 +132,52 @@ class Program{
         Console.WriteLine($"Tarea {idTarea} no encontrada.");
     }
 
-    public Tipo BuscarPorTipoTarea(List<Tarea> tareas){
+    public static Tipo BuscarPorTipoTarea(List<Tarea> tareas){
         
         while (true){
         Console.Write("Busque el tipo de Tarea: ");
-        Console.WriteLine("1. Personal");
+        Console.WriteLine("\n1. Persona");
         Console.WriteLine("2. Trabajo");
         Console.WriteLine("3. Ocio");
         switch (Console.ReadLine()!){
             case "1":
-                Console.WriteLine("Tarea de tipo Personal seleccionada.");
+                Console.WriteLine("Tarea de tipo Persona seleccionada.");
+                if (tareas.Any(t => t.Tipo == Tipo.Persona)){
+                        foreach (var tareaTipo in tareas){
+                            if (tareaTipo.Tipo == Tipo.Persona){
+                                Console.WriteLine(tareaTipo.ToString());
+                            }
+                        }
+                    }
+                    else{
+                        Console.WriteLine($"No hay tareas de tipo {Tipo.Persona} registradas.");
+                    }
                 return Tipo.Persona;
             case "2":
                 Console.WriteLine("Tarea de tipo Trabajo seleccionada.");
+                if (tareas.Any(t => t.Tipo == Tipo.Trabajo)){
+                        foreach (var tareaTipo in tareas){
+                            if (tareaTipo.Tipo == Tipo.Trabajo){
+                                Console.WriteLine(tareaTipo.ToString());
+                            }
+                        }
+                    }
+                    else{
+                        Console.WriteLine($"No hay tareas de tipo {Tipo.Trabajo} registradas.");
+                    }
                 return Tipo.Trabajo;
             case "3":
                 Console.WriteLine("Tarea de tipo Ocio seleccionada.");
+                if (tareas.Any(t => t.Tipo == Tipo.Ocio)){
+                        foreach (var tareaTipo in tareas){
+                            if (tareaTipo.Tipo == Tipo.Ocio){
+                                Console.WriteLine(tareaTipo.ToString());
+                            }
+                        }
+                    }
+                    else{
+                        Console.WriteLine($"No hay tareas de tipo {Tipo.Ocio} registradas.");
+                    }
                 return Tipo.Ocio;
             default:
                 Console.WriteLine("Opción no válida.");

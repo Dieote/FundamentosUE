@@ -21,7 +21,7 @@ public class Tarea
     public static void MostrarListadoTareas(List<Tarea> tareas){
         Console.WriteLine($"** Lista tareas **");
         foreach (var tarea in tareas){
-            Console.WriteLine($"{tarea.IdTarea} | Nombre {tarea.Nombre} | Descripcion {tarea.Descripcion} $| Prioridad {tarea.Prioridad} | Tipo {tarea.Tipo}");
+            Console.WriteLine($"{tarea.IdTarea} | Nombre {tarea.Nombre} | Descripcion {tarea.Descripcion} | Prioridad {tarea.Prioridad} | Tipo {tarea.Tipo}");
         }
         Console.WriteLine($"** --- Fin de la lista --- **");
     }
