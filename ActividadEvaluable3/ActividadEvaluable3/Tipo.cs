@@ -1,4 +1,4 @@
-public enum TipoTarea{
+public enum Tipo{
    Persona,
    Trabajo,
    Ocio
