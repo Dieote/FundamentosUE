@@ -10,8 +10,8 @@ class Program{
         Tarea newTarea1 = new Tarea("ESTUDIAR", "Tarae para realiazar actividad de estudio", Tipo.Trabajo, false);
         Tarea newTarea2 = new Tarea("VIDEOJUEGOS", "Tarea para realizar actividad de recreacion", Tipo.Ocio, true); 
 
-        tareas.Add(newTarea1);
         tareas.Add(newTarea0);
+        tareas.Add(newTarea1);
         tareas.Add(newTarea2);
 
         while (true){
