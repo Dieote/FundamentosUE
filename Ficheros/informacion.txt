@@ -1,0 +1,9 @@
+Este es un ejemplo de fichero para su lectura desde C#Hola
+123Diego1,Gomez2,lalalala@gmail.com1,123456789
+Diego2,Gomez2,lalalala@gmail.com2,123456789
+Diego3,Gomez3,lalalala@gmail.com3,123456789
+Diego4,Gomez4,lalalala@gmail.com4,123456789
+Diego5,Gomez5,lalalala@gmail.com5,123456789
+Diego6,Gomez6,lalalala@gmail.com6,123456789
+Diego7,Gomez7,lalalala@gmail.com7,123456789
+Diego8,Gomez8,lalalala@gmail.com8,123456789

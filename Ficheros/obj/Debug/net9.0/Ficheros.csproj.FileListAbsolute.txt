@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\bin\Debug\net9.0\Ficheros.exe
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\bin\Debug\net9.0\Ficheros.deps.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\bin\Debug\net9.0\Ficheros.runtimeconfig.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\bin\Debug\net9.0\Ficheros.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\bin\Debug\net9.0\Ficheros.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\Ficheros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\Ficheros.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\Ficheros.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\Ficheros.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\Ficheros.sourcelink.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\Ficheros.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\refint\Ficheros.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\Ficheros.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\Ficheros.genruntimeconfig.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\Ficheros\obj\Debug\net9.0\ref\Ficheros.dll
