@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\bin\Debug\net9.0\VehiculosMarzo.exe
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\bin\Debug\net9.0\VehiculosMarzo.deps.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\bin\Debug\net9.0\VehiculosMarzo.runtimeconfig.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\bin\Debug\net9.0\VehiculosMarzo.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\bin\Debug\net9.0\VehiculosMarzo.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\VehiculosMarzo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\VehiculosMarzo.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\VehiculosMarzo.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\VehiculosMarzo.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\VehiculosMarzo.sourcelink.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\VehiculosMarzo.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\refint\VehiculosMarzo.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\VehiculosMarzo.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\VehiculosMarzo.genruntimeconfig.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\VehiculosMarzo\obj\Debug\net9.0\ref\VehiculosMarzo.dll

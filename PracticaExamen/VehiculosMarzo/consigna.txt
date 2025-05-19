@@ -1,0 +1,6 @@
+Crea una aplicación que gestione una lista de vehículos. La aplicación debe
+permitir agregar diferentes tipos de vehículos, como autos y motocicletas,
+a una lista y luego mostrar los detalles de cada uno. Cada tipo de vehículo
+debe tener propiedades comunes, pero algunos deben tener propiedades
+adicionales específicas. Asocia atributos que veas conveniente a cada una
+de las clases, teniendo en cuenta que debes aplicar herencia

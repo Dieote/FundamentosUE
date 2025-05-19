@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\bin\Debug\net9.0\TemperaturaPractica.exe
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\bin\Debug\net9.0\TemperaturaPractica.deps.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\bin\Debug\net9.0\TemperaturaPractica.runtimeconfig.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\bin\Debug\net9.0\TemperaturaPractica.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\bin\Debug\net9.0\TemperaturaPractica.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\TemperaturaPractica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\TemperaturaPractica.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\TemperaturaPractica.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\TemperaturaPractica.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\TemperaturaPractica.sourcelink.json
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\TemperaturaPractica.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\refint\TemperaturaPractica.dll
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\TemperaturaPractica.pdb
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\TemperaturaPractica.genruntimeconfig.cache
+C:\Users\Usuario\Documents\GitHub\FundamentosUE\PracticaExamen\TemperaturaPractica\obj\Debug\net9.0\ref\TemperaturaPractica.dll

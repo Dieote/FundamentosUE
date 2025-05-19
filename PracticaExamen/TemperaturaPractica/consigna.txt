@@ -1,0 +1,8 @@
+Crea una aplicación que gestione temperaturas registradas de los 
+últimos 5 dias. Para eso el sistema:
+a. Generará automáticamente temperaturas ente 5-30 y las guardará en
+una lista
+b. Mostrará los siguientes datos
+i. Temperatura más alta
+ii. Temperatura más baja
+iii. Temperatura media
