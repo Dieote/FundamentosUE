@@ -1,0 +1,17 @@
+Crea un programa en C# que gestione empleados de una empresa. Debe cumplir lo 
+siguiente:
+• Crea una clase base llamada Empleado con:
+o Propiedades: Nombre, Edad, Salario. Configura los tipos que mejor se 
+asocien a cada uno de los atributos
+o Un método MostrarInformacion() que muestre los datos en consola.
+• Crea una clase derivada llamada Programador, que herede de Empleado y 
+tenga una propiedad adicional:
+o lenguajeFavorito.
+o Sobrescribe el método MostrarInformacion() para que también muestre 
+el lenguaje favorito.
+• En el Main, crea:
+o Tres objetos empleados
+o Tres objeto de tipo Programador.
+o Mete todos los objetos en una lista tipada
+o Llama al método MostrarInformacion() de todos los objetos recorriendo 
+la lista.

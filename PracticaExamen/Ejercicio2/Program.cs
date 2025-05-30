@@ -14,5 +14,6 @@
 
         Console.WriteLine("El precio total de los productos es: " + tiendaMadrid.CalcularPrecioTotal());
 
+        tiendaMadrid.BuscarProducto("Mesa");
     }
 }

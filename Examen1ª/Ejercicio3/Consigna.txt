@@ -1,0 +1,26 @@
+Crea un programa en C# que permita a una persona escribir entradas en su diario 
+personal.
+• Clase EntradaDiario
+o Propiedades:
+▪ Fecha (tipo DateTime) ▪ Titulo (string) ▪ Contenido (string)
+o Método: FormatearEntrada(). Pondrá la entrada con el siguiente 
+formato:
+▪ Titulo: XXX, Contenido:XXX, Fecha: XXX
+
+• Clase GestorDiario
+o Propiedades
+▪ List<EntradaDiario>
+o Método: GuardarEntrada(EntradaDiario entrada)
+▪ Guarda la entrada en un fichero de texto llamado diario.txt, 
+añadiéndola al final.
+o Usa try-catch para controlar errores de escritura. Si hay un error, 
+muestra un mensaje de error en consola.
+• Clase Entrada
+o Pide al usuario que introduzca:
+o Un título
+o El contenido de su entrada
+o Crea un objeto EntradaDiario.
+o Llama a GuardarEntrada() para guardar la entrada.
+o Muestra un mensaje confirmando que se ha guardado correctamente.
+o Repite el proceso tres veces
+o Muestra todo el contenido del diario
