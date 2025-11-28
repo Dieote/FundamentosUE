@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Resultados</title>
+     <style>
+        body {
+            text-align: center;
+            font-size: 32px;
+        }
+        input[type="submit"], button {
+            font-size: 22px;  
+            padding: 10px 25px;
+}
+    </style>
 </head>
 <body>
 

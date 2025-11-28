@@ -1,5 +1,5 @@
 import os
-
+#la ruta del archivo
 ARCHIVO = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'inventarioTienda.txt')
 
 def cargarInventario(): 

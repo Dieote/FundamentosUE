@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectángulo</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
 <?php
 $alto = rand(5, 15);
 $ancho = rand(5, 15);
@@ -13,3 +27,6 @@ for ($i = 1; $i <= $alto; $i++) {
     echo "<br>";
 }
 ?>
+
+</body>
+</html>

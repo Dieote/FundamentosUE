@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectángulo</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-size: 22px;
+        }
+        div {
+            margin: 20px;
+            margin-left: 52rem;
+        }
+        hr {
+            border-top: 5px solid #000;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
 <?php
 function tirarDados($cantidad){
     $dados = [];
@@ -72,3 +94,5 @@ if ($ganadas1 > $ganadas2) {
     echo "<h3>🤝 El juego termina en empate</h3>";
 }
 ?>
+</body>
+</html>
