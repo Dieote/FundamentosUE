@@ -30,8 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <div class="container">
     <h2>Inicio de Sesion</h2>
     <?php if ($error): ?>
         <p style="color: red;"><?php echo $error; ?></p>
@@ -48,5 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </form>
 
     <a href="index.php">Volver al inicio</a>
+    </div>
 </body>
 </html>

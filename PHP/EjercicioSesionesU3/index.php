@@ -8,8 +8,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <div class="container">
     <h2>Página Principal</h2>
 
 <?php
@@ -24,5 +26,6 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] === true) {
 }
 ?>
 
+</div>
 </body>
 </html>
