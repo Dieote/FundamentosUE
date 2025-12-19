@@ -1,6 +1,7 @@
 <?php
     session_start()
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,7 +14,7 @@
 
 <?php
 //validar inicio sesion
-if(isset($_SESSION['logeado']) && $_SESSION['logeado'] === true) {
+if(isset($_SESSION['logueado']) && $_SESSION['logueado'] === true) {
     echo "<p>Bienvenido, <strong>" .($_SESSION['usuario']) . "</strong>!</p>";
     echo '<a href="dashboard.php">Ir al Dashboard</a><br>';
     echo '<a href="logout.php">Cerrar Sesión</a>';
