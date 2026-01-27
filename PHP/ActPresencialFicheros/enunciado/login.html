@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tienda Online</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor-login">
+        <header class="cabecera">
+            <h1>Tienda Online</h1>
+            <p>Sistema de gestión de pedidos</p>
+        </header>
+        
+        <main class="principal">
+            <div class="tarjeta-login">
+                <h2>Iniciar Sesión</h2>
+                <p class="descripcion">Introduce tus credenciales para acceder al sistema</p>
+                
+                <!-- 
+                ACCIÓN: Este formulario debe enviar los datos a verificar.php
+                MÉTODO: POST
+                -->
+                <form action="verificar.php" method="post" class="formulario">
+                    <div class="grupo-formulario">
+                        <label for="usuario">Nombre de usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+                    
+                    <div class="grupo-formulario">
+                        <label for="clave">Contraseña:</label>
+                        <input type="password" id="clave" name="clave" required>
+                    </div>
+                    
+                    <div class="grupo-formulario">
+                        <button type="submit" class="btn btn-primario">
+                            Ingresar al Sistema
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
+        <footer class="pie">
+            <p>Sistema desarrollado para Gestión de Tienda Online</p>
+        </footer>
+    </div>
+</body>
+</html>

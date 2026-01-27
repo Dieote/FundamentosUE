@@ -1,0 +1,16 @@
+/proyecto_tienda/
+│
+├── login.html                    # Formulario de login (completo)
+├── verificar.php                 # Validación (esqueleto para completar)
+├── clave.txt                     # Usuarios y claves
+│
+├── pedido.php                    # Formulario pedido (esqueleto)
+├── guardar_pedido.php            # Guardar pedido (esqueleto)
+├── pedidos.txt                   # Base de datos de pedidos
+│
+├── mostrar.php                   # Mostrar pedidos (esqueleto)
+├── calcular.php                  # Calcular precios (esqueleto)
+├── sorteo.php                    # Sistema sorteo (esqueleto)
+│
+└── css/
+    └── estilos.css               # Estilos CSS completos
