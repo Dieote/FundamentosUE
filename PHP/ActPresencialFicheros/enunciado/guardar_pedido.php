@@ -21,13 +21,34 @@
                 - Usar $_POST para cada campo
                 - Validar que todos los campos tengan datos
                 */
+                                // Variables para almacenar los datos
+                $nombre = "";
+                $direccion = "";
+                $producto = "";
+                $cantidad = "";
+                $fecha = "";
+                $mensaje = "";
+                
+                // Verificar que el formulario se haya enviado por POST
+                if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                    
+                    // Recuperar datos del formulario
+                    $nombre = isset($_POST['nombre']) ? trim($_POST['nombre']) : '';
+                    $direccion = isset($_POST['direccion']) ? trim($_POST['direccion']) : '';
+                    $producto = isset($_POST['producto']) ? trim($_POST['producto']) : '';
+                    $cantidad = isset($_POST['cantidad']) ? trim($_POST['cantidad']) : '';
+                    
+                    // Validar que todos los campos obligatorios estén completos
+                    if (!empty($nombre) && !empty($direccion) && !empty($producto) && !empty($cantidad)) {
+ 
                 
                 /*
                 TAREA 2: OBTENER FECHA ACTUAL
                 - Usar date('Y-m-d H:i:s') para obtener fecha y hora
                 - Guardar en variable $fecha
                 */
-                
+                    $fecha = date('Y-m-d H:i:s');
+
                 /*
                 TAREA 3: FORMATEAR LÍNEA PARA EL ARCHIVO
                 - Crear una línea con formato: nombre|direccion|producto|cantidad|fecha
@@ -35,6 +56,9 @@
                 - Añadir salto de línea al final (\n)
                 */
                 
+                // Formatear la línea de datos separados por |
+                $linea = $nombre . "|" . $direccion . "|" . $producto . "|" . $cantidad . "|" . $fecha . "\n";
+                                        
                 /*
                 TAREA 4: GUARDAR EN ARCHIVO pedidos.txt
                 - Abrir archivo en modo append ('a')
@@ -42,7 +66,27 @@
                 - Si se guarda correctamente, mostrar mensaje de éxito
                 - Si hay error, mostrar mensaje de error
                 */
-                
+                    // Abrir archivo en modo append (añadir al final)
+                        $archivo = fopen("pedidos.txt", "a");
+                        
+                        if ($archivo) {
+                            // Escribir la línea en el archivo
+                            fputs($archivo, $linea);
+                            fclose($archivo);
+                            $mensaje = "Pedido guardado correctamente.";
+                        } else {
+                            $mensaje = "Error al guardar el pedido. No se pudo abrir el archivo.";
+                        }
+                        
+                    } else {
+                        // Campos incompletos
+                        $mensaje = "Error: Todos los campos son obligatorios.";
+                    }
+                    
+                } else {
+                    // No se envió el formulario correctamente
+                    $mensaje = "Error: No se recibieron datos del formulario.";
+                }
                 /*
                 TAREA 5: MOSTRAR RESULTADO AL USUARIO
                 - Mostrar mensaje de confirmación o error
@@ -51,7 +95,6 @@
                     * Hacer otro pedido (enlace a pedido.php)
                     * Volver al menú (enlace a verificar.php)
                 */
-                
                 // EJEMPLO DE ESTRUCTURA:
                 $mensaje = ""; // Aquí poner mensaje de éxito o error
                 $nombre = "";  // Aquí poner el nombre del cliente
@@ -69,6 +112,7 @@
                     <h3>Resumen del Pedido</h3>
                     <div class="detalle-resumen">
                         <p><strong>Cliente:</strong> <?php echo htmlspecialchars($nombre); ?></p>
+                        <p><strong>Dirección:</strong> <?php echo htmlspecialchars($direccion); ?></p>
                         <p><strong>Producto:</strong> <?php echo htmlspecialchars($producto); ?></p>
                         <p><strong>Cantidad:</strong> <?php echo htmlspecialchars($cantidad); ?></p>
                         <p><strong>Fecha:</strong> <?php echo $fecha; ?></p>

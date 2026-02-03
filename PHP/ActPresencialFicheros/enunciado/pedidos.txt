@@ -1,0 +1,4 @@
+Diego|Toledo Toledo Toledo 333 Espana|iphone|2|2026-02-03 19:16:11
+Diego|Toledo Toledo Toledo 333 Espana|roomba|2|2026-02-03 19:23:12
+Elena|Madrid Madrid Madrid 22 Espana|iphone|2|2026-02-03 19:40:17
+Elena|Madrid Madrid Madrid 22 Espana|reloj|2|2026-02-03 19:44:11

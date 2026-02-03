@@ -15,8 +15,8 @@
         - Usar $_POST['usuario'] y $_POST['clave']
         - Guardar en variables: $usuario, $clave
         */
-        $usuario = $_POST['usuario'];
-        $clave = $_POST['clave'];
+        $usuario = isset($_POST['usuario']) ? $_POST['usuario'] : '';
+        $clave = isset($_POST['clave']) ? $_POST['clave'] : '';
         $login_correcto = false;
         
         /*
@@ -26,7 +26,17 @@
         - Leer línea por línea
         - Cada línea tiene formato: "usuario clave"
         */
-        $archivo = fopen("clave.txt", "r");
+        //verificar que se enviaron datos
+        if (!empty($usuario) && !empty($clave)) {
+            $archivo = fopen("clave.txt", "r");
+            
+            /*
+            TAREA 3: VALIDAR CREDENCIALES
+            - Para cada línea del archivo:
+            * Dividir la línea en dos partes (usuario y clave)
+            * Comparar con los datos del formulario
+            * Si coinciden: $login_correcto = true
+            */
         if ($archivo) {
             while (!feof($archivo)) {
                 $linea = fgets($archivo);
@@ -40,14 +50,9 @@
                     }
                 }
             }
+            fclose($archivo);
             }
-            /*
-            TAREA 3: VALIDAR CREDENCIALES
-            - Para cada línea del archivo:
-            * Dividir la línea en dos partes (usuario y clave)
-            * Comparar con los datos del formulario
-            * Si coinciden: $login_correcto = true
-            */
+        }
             
             /*
             TAREA 4: MOSTRAR RESULTADO
@@ -59,7 +64,6 @@
             - Mostrar mensaje "Error"
             - Enlace para volver a login.html
             */
-            fclose($archivo);
 
         if ($login_correcto == true) {
             // Mostrar menú principal
@@ -78,6 +82,34 @@
             
             echo "<div class='grid-opciones'>";
             // Aquí poner los 4 enlaces del menú
+            // Opción 1: Hacer Pedido
+            echo "<div class='tarjeta-opcion'>";
+            echo "<h3>Hacer Pedido</h3>";
+            echo "<p>Registra un nuevo pedido en el sistema</p>";
+            echo "<a href='pedido.php' class='btn btn-primario'>Acceder</a>";
+            echo "</div>";
+            
+            // Opción 2: Mostrar Pedidos
+            echo "<div class='tarjeta-opcion'>";
+            echo "<h3>Mostrar Pedidos</h3>";
+            echo "<p>Visualiza todos los pedidos registrados</p>";
+            echo "<a href='mostrar.php' class='btn btn-primario'>Acceder</a>";
+            echo "</div>";
+            
+            // Opción 3: Calcular Precios
+            echo "<div class='tarjeta-opcion'>";
+            echo "<h3>Calcular Precio del Pedido</h3>";
+            echo "<p>Calcula el total de pedidos por cliente</p>";
+            echo "<a href='calcular.php' class='btn btn-primario'>Acceder</a>";
+            echo "</div>";
+            
+            // Opción 4: Sorteo
+            echo "<div class='tarjeta-opcion'>";
+            echo "<h3>Sorteo del Pedido</h3>";
+            echo "<p>Realiza un sorteo entre los clientes</p>";
+            echo "<a href='sorteo.php' class='btn btn-primario'>Acceder</a>";
+            echo "</div>";
+            
             echo "</div>";
             echo "</main>";
         } else {
