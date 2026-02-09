@@ -1,0 +1,24 @@
+Clases a usar
+Usuario (abstracta)
+Atributos comunes: nombre - email
+
+Motivo:Cliente y Entrenador son usuarios con comportamientos distintos.
+
+Cliente (hereda de Usuario)
+lista de reservas / Métodos: reservar_actividad() - ver_reservas()
+
+Entrenador (hereda de Usuario) atributo: especialidad
+
+Actividad (abstracta)
+Atributos: nombre / precio_base / plazas_max / plazas_ocupadas 
+Métodos: hay_plazas() - calcular_precio() → abstracto
+
+ClaseColectiva (hereda de Actividad)
+El precio final es el precio base, No admite más reservas si se llena
+
+EntrenamientoPersonal (hereda de Actividad)
+Tiene un recargo (%)
+Precio = precio_base + porcentaje
+
+Reserva
+Relaciona cliente - actividad - precio_final
