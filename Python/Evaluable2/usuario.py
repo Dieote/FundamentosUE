@@ -3,8 +3,8 @@ from abc import ABC, abstractmethod
 
 class Usuario(ABC):
     def __init__(self, nombre, email):
-        self.nombre = nombre
-        self.email = email
+        self._nombre = nombre
+        self._email = email
 
     @property # controla el acceos
     def nombre(self):
@@ -38,6 +38,7 @@ class Cliente(Usuario):
         if not self._reservas:
             print("No tienes reservas.")
         else:
+            print("Tus reservas:")
             for reserva in self._reservas:
                 print(f"- {reserva}")
                 
@@ -49,4 +50,9 @@ class Entrenador(Usuario):
     @property
     def especialidad(self):
         return self._especialidad
+#setter
+    @especialidad.setter
+    def especialidad(self, valor):
+        if not valor:
+            raise ValueError("La especialidad no puede estar vacía.")
         self._especialidad = valor
