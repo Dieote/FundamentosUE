@@ -1,5 +1,7 @@
 from abc import ABC, abstractmethod
 
+from excepciones import SinPlazasError
+
 class Actividad(ABC):
     def __init__(self, nombre, precio_base, plazas_disponibles):
         self.nombre = nombre
@@ -56,7 +58,7 @@ class Actividad(ABC):
 
     def reservar_plaza(self):
         if not self.hay_lugar():
-            raise Exception("No hay plazas disponibles.")
+            raise SinPlazasError(f"No hay plazas disponibles en {self.nombre}.")
         self._plazas_ocupadas += 1
 
     @abstractmethod

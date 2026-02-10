@@ -1,4 +1,5 @@
 from actividad import ClaseColectiva, SesionPersonal
+from excepciones import ReservaInvalidaError, SinPlazasError
 from reservas import Reserva
 from usuario import Cliente, Entrenador
 
@@ -50,7 +51,27 @@ def main():
 
     print("\nEstado de Yoga:")
     print(f"Plazas ocupadas: {yoga.plazas_ocupadas}/{yoga.plazas_max}")
+    
+    print("\n=== PRUEBA DE RESERVAS CON ERRORES ===")
 
+    try:
+        for i in range(12):  # forzamos el error
+            Reserva(cliente1, yoga)
+
+    except SinPlazasError as e:
+        print("ERROR:", e)
+
+    except ReservaInvalidaError as e:
+        print("ERROR DE RESERVA:", e)
+
+    except Exception as e:
+        print("ERROR GENERAL:", e)
+
+    else:
+        print("Reservas realizadas correctamente.")
+
+    finally:
+        print("Fin de la prueba de reservas.")
     
     
 if __name__ == "__main__":

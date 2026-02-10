@@ -1,5 +1,11 @@
+from excepciones import ReservaInvalidaError
+
+
 class Reserva:
     def __init__(self, cliente, actividad):
+        if cliente is None or actividad is None:
+            raise ReservaInvalidaError("Cliente o actividad no pueden ser invalidos.")
+        
         # Guardamos referencias
         self._cliente = cliente
         self._actividad = actividad
@@ -33,4 +39,4 @@ class Reserva:
         )
 
     def __str__(self):
-        return f"{self._actividad.nombre} - {self._precio_final}€"
+        return f"{self._actividad.nombre} | {self._precio_final}€"
