@@ -36,11 +36,18 @@ class Cliente(Usuario):
         
     def ver_reservas(self):
         if not self._reservas:
-            print("No tienes reservas.")
+            print(f"El cliente {self.nombre} no tiene reservas.")
         else:
-            print("Tus reservas:")
+            print(f"Reservas de {self.nombre}:")
             for reserva in self._reservas:
                 print(f"- {reserva}")
+                
+    def eliminar_reserva(self, indice):
+        if  indice < 0 or indice >= len(self._reservas):
+            raise ValueError("No se puede eliminar la reserva.")
+        reserva = self._reservas.pop(indice)
+        reserva.actividad.plazas_ocupadas -= 1 
+        #libera la plaza al eliminar la reserva
                 
 class Entrenador(Usuario):
     def __init__(self, nombre, email, especialidad):

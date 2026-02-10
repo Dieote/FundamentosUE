@@ -3,11 +3,12 @@ from abc import ABC, abstractmethod
 from excepciones import SinPlazasError
 
 class Actividad(ABC):
-    def __init__(self, nombre, precio_base, plazas_disponibles):
+    def __init__(self, nombre, precio_base, plazas_disponibles, entrenador):
         self.nombre = nombre
         self.precio_base = precio_base
         self.plazas_max = plazas_disponibles
         self._plazas_ocupadas = 0
+        self.entrenador = entrenador
 
     # -------- propiedades --------
     @property
@@ -19,6 +20,10 @@ class Actividad(ABC):
         if not valor:
             raise ValueError("El nombre no puede estar vacío.")
         self._nombre = valor
+
+    @property
+    def entrenador(self):
+        return self._entrenador
 
     @property
     def precio_base(self):
@@ -67,14 +72,25 @@ class Actividad(ABC):
 
 
 class ClaseColectiva(Actividad):
+    
+    def __init__(self, nombre, precio_base, plazas_disponibles, entrenador):
+        super().__init__(nombre, precio_base, plazas_disponibles, entrenador)
+    
     def calcular_precio(self):
         return self._precio_base
-
+    
+    @Actividad.entrenador.setter
+    def entrenador(self, value):
+        self._entrenador = value
 
 class SesionPersonal(Actividad):
-    def __init__(self, nombre, precio_base, plazas_disponibles, recargo):
-        super().__init__(nombre, precio_base, plazas_disponibles)
+    def __init__(self, nombre, precio_base, plazas_disponibles, entrenador, recargo):
+        super().__init__(nombre, precio_base, plazas_disponibles, entrenador)
         self.recargo = recargo
 
     def calcular_precio(self):
         return self._precio_base * (1 + self.recargo / 100)
+    
+    @Actividad.entrenador.setter
+    def entrenador(self, value):
+        self._entrenador = value
