@@ -1,4 +1,5 @@
 from actividad import ClaseColectiva, SesionPersonal
+from reservas import Reserva
 from usuario import Cliente, Entrenador
 
 
@@ -34,6 +35,22 @@ def main():
     yoga.reservar_plaza()
 
     print("Plazas ocupadas en Yoga:", yoga.plazas_ocupadas)
+    
+    print("\n=== RESERVAS ===")
+
+    reserva1 = Reserva(cliente1, yoga)
+    reserva2 = Reserva(cliente1, personal)
+    reserva3 = Reserva(cliente2, yoga)
+
+    print(f"\nReservas de {cliente1.nombre}:")
+    cliente1.ver_reservas()
+
+    print(f"\nReservas de {cliente2.nombre}:")
+    cliente2.ver_reservas()
+
+    print("\nEstado de Yoga:")
+    print(f"Plazas ocupadas: {yoga.plazas_ocupadas}/{yoga.plazas_max}")
+
     
     
 if __name__ == "__main__":
