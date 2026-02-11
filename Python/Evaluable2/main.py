@@ -1,5 +1,5 @@
 from actividad import ClaseColectiva, SesionPersonal
-from excepciones import SinPlazasError
+from excepciones import ReservaDuplicadaError, SinPlazasError
 from reservas import Reserva
 from usuario import Cliente, Entrenador
 
@@ -116,6 +116,8 @@ def main():
                 print("Actividad no válida.")
             except SinPlazasError as e:
                 print("ERROR:", e)
+            except ReservaDuplicadaError as e:
+                print("ADVERTENCIA:", e)
 
         elif opcion == "3":
             cliente.ver_reservas() if cliente else print("No hay cliente.")

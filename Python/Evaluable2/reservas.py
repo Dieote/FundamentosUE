@@ -1,10 +1,15 @@
-from excepciones import ReservaInvalidaError
+from excepciones import ReservaDuplicadaError, ReservaInvalidaError
 
 
 class Reserva:
     def __init__(self, cliente, actividad):
         if cliente is None or actividad is None:
             raise ReservaInvalidaError("Cliente o actividad no pueden ser invalidos.")
+        
+        #comprobacion de reserva duplicada
+        for reserva in cliente._reservas:
+            if reserva.actividad == actividad:
+                raise ReservaDuplicadaError(f"Ya tienes tu plaza reservada en {actividad.nombre}")
         
         # Guardamos referencias
         self._cliente = cliente

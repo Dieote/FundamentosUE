@@ -83,6 +83,10 @@ class ClaseColectiva(Actividad):
     def entrenador(self, value):
         self._entrenador = value
 
+    @Actividad.plazas_ocupadas.setter
+    def plazas_ocupadas(self, value):
+        self._plazas_ocupadas = value
+
 class SesionPersonal(Actividad):
     def __init__(self, nombre, precio_base, plazas_disponibles, entrenador, recargo):
         super().__init__(nombre, precio_base, plazas_disponibles, entrenador)
@@ -94,3 +98,7 @@ class SesionPersonal(Actividad):
     @Actividad.entrenador.setter
     def entrenador(self, value):
         self._entrenador = value
+        
+    @Actividad.plazas_ocupadas.setter
+    def plazas_ocupadas(self, value):
+        self._plazas_ocupadas = value

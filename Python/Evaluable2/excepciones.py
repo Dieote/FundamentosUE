@@ -11,3 +11,7 @@ class SinPlazasError(FitLifeError):
 class ReservaInvalidaError(FitLifeError):
     """Se lanza cuando una reserva no es válida"""
     pass
+
+class ReservaDuplicadaError(FitLifeError):
+    """El cliente ya tiene una reserva para esta actividad"""
+    pass
