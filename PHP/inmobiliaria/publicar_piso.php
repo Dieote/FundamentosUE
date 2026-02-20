@@ -56,7 +56,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <h2>Publicar nuevo piso</h2>
+    <a href="index.php">← Volver</a> |
+    <a href="logout.php">Cerrar sesión</a>
 
+    <?php if ($error): ?>
+        <p style="color:red"><?= $error ?></p><?php endif; ?>
+    <?php if ($exito): ?>
+        <p style="color:green"><?= $exito ?></p><?php endif; ?>
     <form method="POST" enctype="multipart/form-data">
         Calle: <input type="text" name="calle" required><br>
         Número: <input type="number" name="numero" required><br>

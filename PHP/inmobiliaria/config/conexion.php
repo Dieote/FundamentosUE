@@ -1,4 +1,6 @@
 <?php
+define('BASE_URL', '/inmobiliaria/');
+
 // datos para conexión
 define('BD_HOST', 'localhost');
 define('BD_USER', 'root');
@@ -12,4 +14,6 @@ $conexion = new mysqli(BD_HOST, BD_USER, BD_PASS, BD_NAME);
 if ($conexion->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
+
+$conexion->set_charset("utf8");
 ?>

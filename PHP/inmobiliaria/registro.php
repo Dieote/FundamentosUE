@@ -41,6 +41,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <h2>Crear Cuenta</h2>
+    <?php if ($error): ?>
+        <p style="color:red"><?= $error ?></p><?php endif; ?>
+    <?php if ($exito): ?>
+        <p style="color:green"><?= $exito ?></p><?php endif; ?>
     <form method="POST">
         <label>Nombre: <input type="text" name="nombres" required></label><br>
         <label>Correo: <input type="email" name="correo" required></label><br>
