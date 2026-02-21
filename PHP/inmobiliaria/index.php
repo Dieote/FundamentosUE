@@ -4,51 +4,66 @@ require_once 'config/conexion.php';
 
 $resultado = $conexion->query("SELECT * FROM pisos WHERE disponible = 1 ORDER BY precio ASC");
 ?>
-
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <title>Pisos disponibles – Inmobiliaria</title>
+    <meta charset="UTF-8">
+    <title>Inmobiliaria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+<nav>
+    <span class="logo">Inmobiliaria</span>
+    <div>
+        <?php if (isset($_SESSION['usuario_id'])): ?>
+            Hola, <?= htmlspecialchars($_SESSION['nombres']) ?> |
+            <?php if ($_SESSION['tipo_usuario'] === 'administrador'): ?>
+                <a href="admin.php">Panel admin</a>
+            <?php elseif ($_SESSION['tipo_usuario'] === 'vendedor'): ?>
+                <a href="publicar_piso.php">Publicar piso</a>
+            <?php elseif ($_SESSION['tipo_usuario'] === 'comprador'): ?>
+                <a href="comprador.php">Mis compras</a>
+            <?php endif; ?>
+            <a href="logout.php">Cerrar sesión</a>
+        <?php else: ?>
+            <a href="login.php">Iniciar sesión</a>
+            <a href="registro.php">Registrarse</a>
+        <?php endif; ?>
+    </div>
+</nav>
+
+<div class="contenedor">
     <h1>Pisos disponibles</h1>
 
-    <?php if (isset($_SESSION['usuario_id'])): ?>
-        Hola, <strong><?= htmlspecialchars($_SESSION['nombres']) ?></strong>
-        (<?= $_SESSION['tipo_usuario'] ?>) |
-        <?php if ($_SESSION['tipo_usuario'] === 'administrador'): ?>
-            <a href="admin.php">Panel Admin</a> |
-        <?php elseif ($_SESSION['tipo_usuario'] === 'vendedor'): ?>
-            <a href="publicar_piso.php">Publicar piso</a> |
-        <?php elseif ($_SESSION['tipo_usuario'] === 'comprador'): ?>
-            <a href="comprador.php">Mis compras</a> |
-        <?php endif; ?>
-        <a href="logout.php">Cerrar sesión</a>
+    <?php if ($resultado->num_rows === 0): ?>
+        <p>No hay pisos disponibles en este momento.</p>
     <?php else: ?>
-        <a href="login.php">Login</a> | <a href="registro.php">Registro</a>
-    <?php endif; ?>
-
-    <div style="display:flex; flex-wrap:wrap; gap:20px; margin-top:20px;">
+    <div class="pisos-grid">
         <?php while ($piso = $resultado->fetch_assoc()): ?>
-            <div style="border:1px solid #ccc; padding:15px; width:250px;">
-                <img src="imagenes/<?= htmlspecialchars($piso['imagen']) ?>" width="230" height="150"
-                    style="object-fit:cover"><br>
-                <strong><?= htmlspecialchars($piso['calle']) ?>, <?= $piso['numero'] ?> –
-                    <?= $piso['piso'] ?>º<?= htmlspecialchars($piso['puerta']) ?></strong><br>
-                Zona: <?= htmlspecialchars($piso['zona']) ?><br>
-                Metros: <?= $piso['metros'] ?> m²<br>
-                <strong>Precio: <?= number_format($piso['precio'], 2) ?> €</strong><br>
-                <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'comprador'): ?>
-                    <a href="comprador.php?codigo_piso=<?= $piso['Codigo_piso'] ?>"
-                        onclick="return confirm('¿Confirmar compra por <?= number_format($piso['precio'], 2) ?> €?')">
-                        Comprar
-                    </a>
-                <?php endif; ?>
+            <div class="piso-card">
+                <img src="imagenes/<?= htmlspecialchars($piso['imagen']) ?>" alt="Foto piso">
+                <div class="piso-card-info">
+                    <h3><?= htmlspecialchars($piso['calle']) ?>, <?= $piso['numero'] ?> - <?= $piso['piso'] ?>º<?= htmlspecialchars($piso['puerta']) ?></h3>
+                    <p>Zona: <?= htmlspecialchars($piso['zona'] ?? '-') ?></p>
+                    <p>Metros: <?= $piso['metros'] ?> m²</p>
+                    <p>CP: <?= $piso['cp'] ?></p>
+                    <div class="piso-precio"><?= number_format($piso['precio'], 0, ',', '.') ?> €</div>
+                    <?php if (isset($_SESSION['tipo_usuario']) && $_SESSION['tipo_usuario'] === 'comprador'): ?>
+                        <a href="comprador.php?codigo_piso=<?= $piso['Codigo_piso'] ?>"
+                           class="btn btn-azul"
+                           onclick="return confirm('¿Confirmar compra?')">Comprar</a>
+                    <?php endif; ?>
+                </div>
             </div>
         <?php endwhile; ?>
     </div>
-</body>
+    <?php endif; ?>
+</div>
 
+<footer>
+    <p>Inmobiliaria © <?= date('Y') ?></p>
+</footer>
+
+</body>
 </html>

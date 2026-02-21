@@ -33,31 +33,51 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
     <title>Registro – Inmobiliaria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h2>Crear Cuenta</h2>
+
+<nav>
+    <span class="logo">Inmobiliaria</span>
+    <div>
+        <a href="index.php">Ver pisos</a>
+        <a href="login.php">Iniciar sesión</a>
+    </div>
+</nav>
+
+<div class="formulario">
+    <h2>Crear cuenta</h2>
+
     <?php if ($error): ?>
-        <p style="color:red"><?= $error ?></p><?php endif; ?>
-    <?php if ($exito): ?>
-        <p style="color:green"><?= $exito ?></p><?php endif; ?>
-    <form method="POST">
-        <label>Nombre: <input type="text" name="nombres" required></label><br>
-        <label>Correo: <input type="email" name="correo" required></label><br>
-        <label>Contraseña: <input type="password" name="clave" required></label><br>
-        <label>Tipo de usuario:
+            <div class="mensaje-error"><?= $error ?></div>
+        <?php endif; ?>
+        <?php if ($exito): ?>
+            <div class="mensaje-ok"><?= $exito ?></div>
+        <?php endif; ?>
+
+        <form method="POST">
+            <label>Nombre:</label>
+            <input type="text" name="nombres" required>
+            <label>Correo:</label>
+            <input type="email" name="correo" required>
+            <label>Contraseña:</label>
+            <input type="password" name="clave" required>
+            <label>Tipo de usuario:</label>
             <select name="tipo_usuario">
                 <option value="comprador">Comprador</option>
                 <option value="vendedor">Vendedor</option>
             </select>
-        </label><br>
-        <button type="submit">Registrarse</button>
-        <a href="../index.php">Volver</a>
-    </form>
-</body>
+            <button type="submit" class="btn btn-azul btn-bloque">Registrarse</button>
+        </form>
 
+        <p style="margin-top:14px; font-size:13px; text-align:center;">
+            ¿Ya tienes cuenta? <a href="login.php">Inicia sesión</a><br>
+            <a href="index.php">← Volver</a>
+        </p>
+    </div>
+</body>
 </html>

@@ -13,6 +13,8 @@ if ($_SESSION['tipo_usuario'] !== 'comprador') {
 }
 
 $mensaje = "";
+$tipo_msg = "";
+
 
 if (isset($_GET['codigo_piso'])) {
     $codigo_piso = (int) $_GET['codigo_piso'];
@@ -35,15 +37,18 @@ if (isset($_GET['codigo_piso'])) {
         $upd->bind_param("i", $codigo_piso);
         $upd->execute();
 
-        $mensaje = "<p style='color:green'>Piso comprado correctamente por " . number_format($piso['precio'], 2) . " €</p>";
+        $mensaje = "Piso comprado correctamente por " . number_format($piso['precio'], 2) . " €";
+        $tipo_msg = "ok";
+
     } else {
-        $mensaje = "<p style='color:red'>Este piso no está disponible.</p>";
+        $mensaje = "Este piso no está disponible.";
+        $tipo_msg = "error";
     }
 }
 
 // Mostrar historial de compras del usuario
 $historial = $conexion->prepare("
-    SELECT p.calle, p.numero, p.piso, p.puerta, p.zona, c.Precio_final, c.fecha_compra
+    SELECT p.calle, p.numero, p.piso, p.puerta, p.metros, p.zona, c.Precio_final, c.fecha_compra
     FROM comprados c
     JOIN pisos p ON c.Codigo_piso = p.Codigo_piso
     WHERE c.usuario_comprador = ?
@@ -55,41 +60,60 @@ $compras = $historial->get_result();
 ?>
 
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-    <title>Panel Comprador</title>
+    <meta charset="UTF-8">
+    <title>Mis compras – Inmobiliaria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h2>Hola, <?= htmlspecialchars($_SESSION['nombres']) ?>!!!</h2>
-    <a href="index.php">← Ver pisos disponibles</a> |
-    <a href="logout.php">Cerrar sesión</a>
 
-    <?= $mensaje ?>
+<nav>
+    <span class="logo">Inmobiliaria</span>
+    <div>
+        <a href="index.php">Ver pisos</a>
+        <a href="logout.php">Cerrar sesión</a>
+    </div>
+</nav>
 
-    <h3>Mis compras</h3>
+<div class="contenedor">
+    <h1>Mis compras</h1>
+
+    <?php if ($mensaje): ?>
+        <div class="mensaje-<?= $tipo_msg ?>"><?= $mensaje ?></div>
+    <?php endif; ?>
+
     <?php if ($compras->num_rows == 0): ?>
-        <p>Aún no has comprado ningún piso.</p>
+        <p>Aún no has comprado ningún piso. <a href="index.php">Ver pisos disponibles</a></p>
     <?php else: ?>
-        <table border="1" cellpadding="8">
-            <tr>
-                <th>Dirección</th>
-                <th>Zona</th>
-                <th>Precio pagado</th>
-                <th>Fecha</th>
-            </tr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dirección</th>
+                    <th>Zona</th>
+                    <th>Metros</th>
+                    <th>Precio pagado</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
             <?php while ($c = $compras->fetch_assoc()): ?>
                 <tr>
-                    <td><?= htmlspecialchars($c['calle']) ?>, <?= $c['numero'] ?> -
-                        <?= $c['piso'] ?>º<?= htmlspecialchars($c['puerta']) ?></td>
-                    <td><?= htmlspecialchars($c['zona']) ?></td>
-                    <td><?= number_format($c['Precio_final'], 2) ?> €</td>
-                    <td><?= $c['fecha_compra'] ?></td>
+                    <td><?= htmlspecialchars($c['calle']) ?>, <?= $c['numero'] ?> – <?= $c['piso'] ?>º<?= htmlspecialchars($c['puerta']) ?></td>
+                    <td><?= htmlspecialchars($c['zona'] ?? '-') ?></td>
+                    <td><?= $c['metros'] ?> m²</td>
+                    <td><?= number_format($c['Precio_final'], 0, ',', '.') ?> €</td>
+                    <td><?= date('d/m/Y H:i', strtotime($c['fecha_compra'])) ?></td>
                 </tr>
             <?php endwhile; ?>
+            </tbody>
         </table>
     <?php endif; ?>
-</body>
+</div>
 
+<footer>
+    <p>Inmobiliaria © <?= date('Y') ?></p>
+</footer>
+
+</body>
 </html>
