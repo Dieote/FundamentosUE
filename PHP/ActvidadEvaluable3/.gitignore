@@ -1,0 +1,18 @@
+# Archivos de configuración sensibles
+# config/db.php
+
+# Directorios del sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+
+# Temporales
+*.tmp
+*.temp
