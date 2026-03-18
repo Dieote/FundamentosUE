@@ -1,0 +1,65 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+/* Login Page */
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.alert {
+    border-left: 4px solid;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.texto-movible {
+    
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block;
+    animation: moverTexto 3s ease-in-out infinite alternate;
+}
+
+@keyframes moverTexto {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(60px);
+    }
+}
+
+.form-control:focus {
+    border-color: var(#0d6efd);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+.badge {
+    padding: 0.5em 0.8em;
+    font-weight: 500;
+}
+    h1, h2, h3 {
+        font-size: calc(1.3rem + 0.6vw);
+    }
+}
