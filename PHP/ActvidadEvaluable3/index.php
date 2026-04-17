@@ -29,14 +29,13 @@ unset($_SESSION['success_logout']);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body class="bg-light">
     <div class="container">
         <div class="row justify-content-center align-items-center min-vh-100">
             <div class="col-md-5 col-lg-4">
-     <!-- Card Login -->
+                <!-- Card Login -->
                 <div class="card shadow-lg border-0 rounded-lg">
                     <div class="card-header bg-primary text-white text-center py-4">
                         <i class="bi bi-calendar-event fs-1"></i>
@@ -45,7 +44,7 @@ unset($_SESSION['success_logout']);
                     </div>
 
                     <div class="card-body p-4">
-                <!-- mensajes de error -->
+                        <!-- mensajes de error -->
                         <?php if (!empty($error)): ?>
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                 <i class="bi bi-exclamation-triangle-fill me-2"></i>
@@ -100,7 +99,7 @@ unset($_SESSION['success_logout']);
                             <p>Usuarios de prueba:</p>
                             <p>admin:admin123 - pepe:12345</p>
                             <p>juan:54321 - maria:000111</p>
-                            
+
                         </small>
                     </div>
                 </div>

@@ -29,6 +29,11 @@ body {
     border-left: 4px solid;
 }
 
+.table-hover tbody tr {
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;

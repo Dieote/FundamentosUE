@@ -27,6 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         } else {
             $error = "Usuario o contraseña incorrectos.";
+            // Log de intento fallido
+            error_log("Intento de login fallido para usuario: $username desde IP: " . $_SERVER['REMOTE_ADDR']);
         }
     }
     
