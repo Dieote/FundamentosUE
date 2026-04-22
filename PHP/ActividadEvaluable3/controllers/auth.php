@@ -96,4 +96,18 @@ function requerirLogin()
         exit();
     }
 }
+
+function esAdmin()
+{
+    return getUsuarioActual() === 'admin';
+}
+
+function requerirAdmin()
+{
+    requerirLogin();
+    if (!esAdmin()) {
+        header('Location: ' . BASE_URL . 'dashboard.php');
+        exit();
+    }
+}
 ?>
