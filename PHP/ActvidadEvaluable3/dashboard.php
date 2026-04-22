@@ -5,6 +5,10 @@ require_once 'controllers/auth.php';
 requerirLogin();
 
 $usuario = getUsuarioActual();
+
+$pdo = getConnection();
+$stmt = $pdo->query("SELECT id, titulo, descripcion, fecha, lugar FROM eventos ORDER BY fecha ASC");
+$eventos = $stmt->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -51,12 +55,39 @@ $usuario = getUsuarioActual();
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <div class="alert">
-            <h4> inicio sesion usuario <?php echo htmlspecialchars($usuario); ?>!</h4>
+    <div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="mb-0"><i class="bi bi-calendar-event"></i> Eventos Programados</h4>
         </div>
-    </div>
-    </div>
+
+        <?php if (empty($eventos)): ?>
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i> No hay eventos registrados.
+            </div>
+        <?php else: ?>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                    <thead class="table-primary">
+                        <tr>
+                            <th><i class="bi bi-tag"></i> Nombre del Evento</th>
+                            <th><i class="bi bi-text-paragraph"></i> Descripción</th>
+                            <th><i class="bi bi-calendar-date"></i> Fecha</th>
+                            <th><i class="bi bi-geo-alt"></i> Lugar / Sala</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($eventos as $evento): ?>
+                            <tr>
+                                <td class="fw-semibold"><?php echo htmlspecialchars($evento['titulo']); ?></td>
+                                <td><?php echo htmlspecialchars($evento['descripcion']); ?></td>
+                                <td><?php echo date('d/m/Y', strtotime($evento['fecha'])); ?></td>
+                                <td><span class="badge bg-secondary"><?php echo htmlspecialchars($evento['lugar']); ?></span></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        <?php endif; ?>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
