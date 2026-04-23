@@ -48,9 +48,9 @@ unset($_SESSION['mensaje'], $_SESSION['tipo_mensaje']);
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="bienvenido.php">
+                        <span class="nav-link">
                             <i class="bi bi-person-circle"></i> <?php echo htmlspecialchars($usuario); ?>
-                        </a>
+                        </span>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">
